@@ -1,228 +1,234 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GOD NOK Festivalen 2026</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <div class="logo">GOD NOK</div>
-      <button class="hamburger" id="ham"><i class="fas fa-bars"></i></button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#program">Program</a></li>
-        <li><a href="#om">Om oss</a></li>
-        <li><a href="#info">Praktisk</a></li>
-        <li><a href="#sponsorer">Sponsorer</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="#billetter" class="btn-nav">Kjøp billett</a></li>
-      </ul>
-    </div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">GOD NOK</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#program">Program</a></li>
+      <li><a href="#om">Om festivalen</a></li>
+      <li><a href="#praktisk">Praktisk info</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="https://www.ticketmaster.no" target="_blank" class="btn-ticket">Kjøp billett</a></li>
+    </ul>
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
+  <header class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-tag">10-ÅRSJUBILEUM 🎉</p>
+      <p class="hero-pre">9. &ndash; 12. juli 2026 &bull; Engeløya, Steigen</p>
       <h1>GOD NOK<br>FESTIVALEN</h1>
-      <p class="hero-date">9. – 12. JULI 2026</p>
-      <p class="hero-place"><i class="fas fa-map-marker-alt"></i> Engeløya, Steigen</p>
-      <p class="hero-theme">«Vær oppmerksom – alle har en verdi»</p>
-      <div class="hero-btns">
-        <a href="#billetter" class="btn-primary">Kjøp billett</a>
-        <a href="#program" class="btn-secondary">Se program</a>
-      </div>
+      <p class="hero-jubilee">&#127881; 10-ÅRSJUBILEUM &#127881;</p>
+      <p class="hero-tema">Årets tema: <em>«Vær oppmerksom – alle har en verdi»</em></p>
+      <a href="https://www.ticketmaster.no" class="btn-hero" target="_blank">Kjøp billett</a>
     </div>
-    <div class="scroll-down"><i class="fas fa-chevron-down"></i></div>
-  </section>
+    <div class="hero-scroll">&#8595;</div>
+  </header>
 
-  <!-- ARTISTS -->
-  <section id="program" class="section dark">
+  <!-- PROGRAM -->
+  <section id="program" class="section">
     <div class="container">
       <h2 class="section-title">Årets artister</h2>
-      <p class="section-sub">Et håndplukket knippe av Norges beste artister — klare til å gjøre Engeløya magisk.</p>
+      <p class="section-sub">Et nøye håndplukket lineup — musikere, kunstnere og kloke hoder som har noe å gi.</p>
 
       <div class="headliners">
         <div class="headliner-card">
-          <div class="headliner-img madcon"></div>
+          <div class="headliner-icon">🎤</div>
           <h3>MADCON</h3>
-          <span class="badge">Headliner</span>
+          <p>Headliner</p>
         </div>
-        <div class="headliner-card">
-          <div class="headliner-img delillos"></div>
+        <div class="headliner-card featured">
+          <div class="headliner-icon">🎸</div>
           <h3>deLillos</h3>
-          <span class="badge">Headliner</span>
+          <p>Headliner</p>
         </div>
         <div class="headliner-card">
-          <div class="headliner-img minor"></div>
+          <div class="headliner-icon">🎵</div>
           <h3>Minor Majority</h3>
-          <span class="badge">Headliner</span>
+          <p>Headliner</p>
         </div>
       </div>
 
       <div class="artist-grid">
-        <div class="artist-pill">Joddski</div>
-        <div class="artist-pill">Inge Bremnes</div>
-        <div class="artist-pill">Dag Sørås</div>
-        <div class="artist-pill">Jonis Josef</div>
-        <div class="artist-pill">Maria Stavang</div>
-        <div class="artist-pill">Brenn.</div>
-        <div class="artist-pill">Anna Lille</div>
-        <div class="artist-pill">Madeléne</div>
-        <div class="artist-pill">Aksel Tjora</div>
-        <div class="artist-pill">Josef Dahlgren</div>
-        <div class="artist-pill">Rita Småvik</div>
-        <div class="artist-pill">Håkon Gisholt</div>
-        <div class="artist-pill">Hoanna</div>
-        <div class="artist-pill">Sult</div>
-        <div class="artist-pill">Los Mexicanacas</div>
-        <div class="artist-pill">Espen Brodersen</div>
-        <div class="artist-pill">Hobbel</div>
-        <div class="artist-pill">Nea & The Regulars</div>
-      </div>
-
-      <div class="spotify-cta">
-        <a href="#" class="btn-spotify"><i class="fab fa-spotify"></i> Sjekk årets spilleliste på Spotify</a>
+        <span>Joddski</span>
+        <span>Inge Bremnes</span>
+        <span>Dag Sørås</span>
+        <span>Jonis Josef</span>
+        <span>Maria Stavang</span>
+        <span>Brenn.</span>
+        <span>Anna Lille</span>
+        <span>Madeléne</span>
+        <span>Aksel Tjora</span>
+        <span>Josef Dahlgren</span>
+        <span>Rita Småvik</span>
+        <span>Håkon Gisholt</span>
+        <span>Hoanna</span>
+        <span>Sult</span>
+        <span>Los Mexicanacas</span>
+        <span>Espen Brodersen</span>
+        <span>Hobbel</span>
+        <span>Nea &amp; The Regulars</span>
       </div>
     </div>
   </section>
 
-  <!-- OM OSS -->
-  <section id="om" class="section light">
-    <div class="container two-col">
-      <div class="col-text">
-        <h2 class="section-title left">Om God Nok</h2>
-        <p>God Nok-festivalen oppsto etter en rekke selvmord i Steigen kommune. Vi ville feire livet — åpne opp, fjerne stigma og tabuer. Snakker vi om problemet, er vi i gang med å løse det.</p>
-        <p>Festivalen er <strong>100% ideelt drevet</strong>. Alle jobber på fritiden sin, uten lønn, fordi de tror på saken.</p>
-        <p>Annethvert år arrangeres storefestivalen, og i mellomårene holder vi mini-God Nok. I 2026 er vi tilbake for fullt — og feirer <strong>10-årsjubileum</strong>.</p>
-        <blockquote>«God Nok er følelsen som gjør deg trygg på det fine ved den du er, komfortabel med dine svakheter, og fornøyd med hvordan du bruker ditt talent.»</blockquote>
-      </div>
-      <div class="col-values">
-        <div class="value-card">
-          <i class="fas fa-heart"></i>
-          <h4>Alle er velkomne</h4>
-          <p>Alle skal føle seg verdsatt, inkludert og velkommen — uten unntak.</p>
+  <!-- OM FESTIVALEN -->
+  <section id="om" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Om God Nok</h2>
+      <div class="om-grid">
+        <div class="om-text">
+          <p>Det startet med en krise. Steigen mistet for mange altfor tidlig — og noen bestemte seg for at slik kunne det ikke fortsette. God Nok-festivalen ble til som en hyllest til livet, og et sted der ingen følte seg alene.</p>
+          <p>Siden 2016 har vi samlet folk på Engeløya i Steigen — med midnattsol, fjell og fjord som ramme, og musikk og samtaler som innhold. Vi er en ideelt drevet festival. Ingen av oss tar lønn. Vi gjør dette fordi vi tror på det.</p>
+          <p><em>«God Nok er følelsen som gjør deg trygg på det fine ved den du er, komfortabel med dine svakheter, og fornøyd med hvordan du bruker ditt talent på det som betyr mest for deg.»</em></p>
         </div>
-        <div class="value-card">
-          <i class="fas fa-brain"></i>
-          <h4>Psykisk helse</h4>
-          <p>Vi jobber for å spre kunnskap og fjerne stigma rundt psykisk helse.</p>
-        </div>
-        <div class="value-card">
-          <i class="fas fa-mountain"></i>
-          <h4>Natur og kultur</h4>
-          <p>En hyllest til det enkle liv — med nærhet til natur, kultur og hverandre.</p>
+        <div class="om-values">
+          <div class="value-card">
+            <span>🌿</span>
+            <h4>Nærhet til naturen</h4>
+            <p>Engeløya i Steigen er en av Norges vakreste steder. Det er ikke tilfeldig at vi er her.</p>
+          </div>
+          <div class="value-card">
+            <span>🤝</span>
+            <h4>Alle er velkomne</h4>
+            <p>Ingen tilskuere. Alle deltar. Alle er verdifulle og likeverdige, akkurat slik de er.</p>
+          </div>
+          <div class="value-card">
+            <span>💚</span>
+            <h4>Psykisk helse</h4>
+            <p>Vi snakker åpent om det vanskelige. Snakker vi om problemet, er vi i gang med å løse det.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INFO -->
-  <section id="info" class="section dark">
+  <!-- PRAKTISK -->
+  <section id="praktisk" class="section">
     <div class="container">
       <h2 class="section-title">Praktisk info</h2>
-      <div class="info-grid">
-        <div class="info-card">
-          <i class="fas fa-calendar-alt"></i>
-          <h4>Dato</h4>
-          <p>9. – 12. juli 2026</p>
-        </div>
-        <div class="info-card">
-          <i class="fas fa-map-marker-alt"></i>
+      <div class="praktisk-grid">
+        <div class="praktisk-card">
+          <div class="p-icon">📍</div>
           <h4>Sted</h4>
-          <p>Engeløya, Bø i Steigen, Nordland</p>
+          <p>Bø på Engeløya<br>Steigen, Nordland</p>
         </div>
-        <div class="info-card">
-          <i class="fas fa-sun"></i>
+        <div class="praktisk-card">
+          <div class="p-icon">📅</div>
+          <h4>Dato</h4>
+          <p>9. – 12. juli 2026<br>Midtsommer i Nord-Norge</p>
+        </div>
+        <div class="praktisk-card">
+          <div class="p-icon">🌞</div>
           <h4>Midnattsol</h4>
-          <p>Opplev festivalen under den magiske midnattssola over Lofotfjellene</p>
+          <p>Opplev festivalen under<br>den hvite natta</p>
         </div>
-        <div class="info-card">
-          <i class="fas fa-hands-helping"></i>
-          <h4>Frivillig</h4>
-          <p>Vil du bidra? Vi er alltid på jakt etter engasjerte frivillige!</p>
-        </div>
-        <div class="info-card">
-          <i class="fas fa-ticket-alt"></i>
-          <h4>Billetter</h4>
-          <p>Tilgjengelig nå — sikre deg plass til jubileumsfesten!</p>
-        </div>
-        <div class="info-card">
-          <i class="fas fa-campground"></i>
+        <div class="praktisk-card">
+          <div class="p-icon">🏕️</div>
           <h4>Camping</h4>
-          <p>Campingmuligheter på festivalområdet i naturskjønne omgivelser</p>
+          <p>Campingplass tilgjengelig<br>på festivalområdet</p>
+        </div>
+        <div class="praktisk-card">
+          <div class="p-icon">🚌</div>
+          <h4>Transport</h4>
+          <p>Busstransport og<br>parkering tilgjengelig</p>
+        </div>
+        <div class="praktisk-card">
+          <div class="p-icon">🤲</div>
+          <h4>Frivillig?</h4>
+          <p>Vi trenger folk!<br><a href="mailto:post@godnokfestivalen.no">Ta kontakt her</a></p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- BILLETTER -->
-  <section id="billetter" class="section accent">
-    <div class="container center">
-      <h2 class="section-title">Sikre deg billetten</h2>
-      <p class="section-sub">10-årsjubileum fortjener å feires med de rette menneskene. Bli med oss på Engeløya!</p>
-      <a href="#" class="btn-primary large">Kjøp billett nå →</a>
     </div>
   </section>
 
   <!-- SPONSORER -->
-  <section id="sponsorer" class="section light">
-    <div class="container center">
+  <section class="section section-dark">
+    <div class="container">
       <h2 class="section-title">Støttespillere</h2>
-      <p class="section-sub">Festivalen hadde ikke vært mulig uten disse fantastiske organisasjonene som tror på arbeidet vårt.</p>
+      <p class="section-sub">Festivalen eksisterer takket være disse. De fleste har vært med siden 2016.</p>
       <div class="sponsor-grid">
-        <div class="sponsor-card">Cermaq</div>
-        <div class="sponsor-card">Nord-Salten Kraft</div>
-        <div class="sponsor-card">Nordland Fylkeskommune</div>
-        <div class="sponsor-card">Kulturrådet</div>
-        <div class="sponsor-card">Steigen Kommune</div>
+        <div class="sponsor">Cermaq</div>
+        <div class="sponsor">Nord-Salten Kraft</div>
+        <div class="sponsor">Nordland Fylkeskommune</div>
+        <div class="sponsor">Kulturrådet</div>
+        <div class="sponsor">Steigen Kommune</div>
+        <div class="sponsor">SpareBank 1</div>
+        <div class="sponsor">Nyhamn</div>
+        <div class="sponsor">Martin Sivertsens minnefond</div>
       </div>
     </div>
   </section>
 
   <!-- KONTAKT -->
-  <section id="kontakt" class="section dark">
-    <div class="container center">
+  <section id="kontakt" class="section">
+    <div class="container">
       <h2 class="section-title">Kontakt oss</h2>
-      <p class="section-sub">Spørsmål? Ta gjerne kontakt eller følg oss i sosiale medier.</p>
-      <div class="social-links">
-        <a href="https://www.facebook.com/godnokfestivalen/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#" target="_blank"><i class="fab fa-spotify"></i> Spotify</a>
+      <p class="section-sub">Styret i God Nok-festivalen består av ildsjeler som liker at det skjer noe rundt dem.</p>
+      <div class="kontakt-grid">
+        <div class="kontakt-card">
+          <h4>Torunn Baade Aalstad</h4>
+          <p class="rolle">Styreleder &amp; Festivalsjef</p>
+          <p><a href="tel:97424700">974 24 700</a></p>
+          <p><a href="mailto:torunn@godnokfestivalen.no">torunn@godnokfestivalen.no</a></p>
+        </div>
+        <div class="kontakt-card">
+          <h4>Ann-Merethe Willumsen</h4>
+          <p class="rolle">Nestleder &amp; Frivillig-/markedsansvarlig</p>
+          <p><a href="tel:97663876">976 63 876</a></p>
+          <p><a href="mailto:ann-merethe@godnokfestivalen.no">ann-merethe@godnokfestivalen.no</a></p>
+        </div>
+        <div class="kontakt-card">
+          <h4>Truls Theting</h4>
+          <p class="rolle">Styremedlem &amp; Økonomiansvarlig</p>
+          <p><a href="tel:99516543">995 16 543</a></p>
+          <p><a href="mailto:truls@godnokfestivalen.no">truls@godnokfestivalen.no</a></p>
+        </div>
+        <div class="kontakt-card">
+          <h4>Atle D. Baade-Aalstad</h4>
+          <p class="rolle">Booking, program &amp; produksjon</p>
+          <p><a href="tel:97069019">970 69 019</a></p>
+          <p><a href="mailto:atle@godnokfestivalen.no">atle@godnokfestivalen.no</a></p>
+        </div>
       </div>
-      <p class="contact-email"><i class="fas fa-envelope"></i> post@godnokfestivalen.no</p>
+      <div class="kontakt-general">
+        <p>Generelle henvendelser: <a href="mailto:post@godnokfestivalen.no">post@godnokfestivalen.no</a></p>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>© 2026 God Nok Festivalen — Ideelt drevet med hjerte for psykisk helse 💚</p>
+  <footer class="footer">
+    <div class="footer-social">
+      <a href="https://www.facebook.com/godnokfestivalen" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/godnokfestivalen" target="_blank">Instagram</a>
+      <a href="https://m.me/godnokfestivalen" target="_blank">Messenger</a>
+    </div>
+    <p>© 2026 God Nok Festivalen &bull; Steigen, Nordland</p>
+    <p class="footer-small">En ideelt drevet festival for psykisk helse og menneskelig fellesskap</p>
   </footer>
 
   <script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
-    });
-    // Hamburger
-    document.getElementById('ham').addEventListener('click', () => {
-      document.getElementById('nav-links').classList.toggle('open');
-    });
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
       });
     });
   </script>
-
 </body>
 </html>
